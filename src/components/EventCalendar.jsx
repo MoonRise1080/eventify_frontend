@@ -15,7 +15,6 @@ export function EventCalendar({ events = [] }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
-  // group events by dateKey
   const eventsByDate = useMemo(() => {
     return events.reduce((acc, ev) => {
       const d = new Date(ev.date);
@@ -43,7 +42,6 @@ export function EventCalendar({ events = [] }) {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      {/* Calendar View */}
       <div className="lg:col-span-2">
         <Card className="w-full">
           <CardHeader>
@@ -67,7 +65,6 @@ export function EventCalendar({ events = [] }) {
               </div>
             </div>
 
-            {/* Legend */}
             <div className="flex flex-wrap gap-3 mt-4 text-xs">
               {[
                 ["Technology", "bg-blue-500"],
@@ -94,15 +91,10 @@ export function EventCalendar({ events = [] }) {
               className="rounded-md border-0 w-full"
             />
 
-            {/* Dots for days with events */}
-            {/* If you want exact overlay dots like the TS version, you can implement a custom grid overlay.
-               Simpler approach: show dots inside a footer below the calendar or highlight selected days.
-               react-day-picker also supports modifiers; advanced styling can be added later. */}
           </CardContent>
         </Card>
       </div>
 
-      {/* Right-side Selected Date Events */}
       <div className="space-y-4">
         <Card>
           <CardHeader>
@@ -180,7 +172,6 @@ export function EventCalendar({ events = [] }) {
           </CardContent>
         </Card>
 
-        {/* Quick stats */}
         <Card>
           <CardHeader>
             <CardTitle className="text-lg">This Month</CardTitle>

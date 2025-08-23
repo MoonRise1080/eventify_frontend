@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Home from "./pages/HomePage";
 //import { Routes, Route, Navigate } from "react-router-dom";
-import { Dashboard } from "./components/Dashboard.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+
 import { MyCalendar } from "./components/MyCalendar.jsx";
 
 import {

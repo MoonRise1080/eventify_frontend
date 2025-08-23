@@ -1,8 +1,8 @@
-import { Header } from './Header.jsx';
-import { Hero } from './Hero.jsx';
-import { EventsSection } from './EventsSection.jsx';
+import { Header } from '../components/Header.jsx';
+import { Hero } from '../components/Hero.jsx';
+import { EventsSection } from '../components/EventsSection.jsx';
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -13,8 +13,7 @@ export function Dashboard() {
 
       <footer className="bg-muted py-12 mt-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">           <div>
               <h3 className="font-semibold mb-4">Eventify</h3>
               <p className="text-sm text-muted-foreground">
                 Connecting university students through amazing events and experiences.

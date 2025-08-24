@@ -1,4 +1,6 @@
 ## 🚀 Installation
+for backend repository: 
+https://github.com/MoonRise1080/eventify_backend.git
 
 ### 1. Clone Repository
 ```bash

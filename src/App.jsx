@@ -1,25 +1,28 @@
-import { useState } from "react";
-import Home from "./pages/HomePage";
+import React from "react";
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
-  useLocation,
 } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0);
 
+import HomePage from './pages/HomePage';
+import AllEvent from './pages/AllEvent';
+import MyEventsPage from './pages/MyEventsPage';
+import ProfilePage from './pages/ProfilePage';
+
+
+import Navbar from "./pages/components/NavBar";
+
+export default function App() {
   return (
-    <>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    </>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/all-events" element={<AllEvent />} />
+        <Route path="/my-events" element={<MyEventsPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
+    </div>
   );
 }
-
-export default App;

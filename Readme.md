@@ -1,6 +1,3 @@
-# merge-conflicts
-
-
 ## 🚀 Installation
 
 ### 1. Clone Repository
@@ -10,19 +7,7 @@ cd [project-name]
 git checkout dev
 ```
 
-### 2. Backend Setup (Laravel)
-```bash
-cd backend
-composer install
-cp .env.example .env
-# Configure database in .env file
-php artisan key:generate
-php artisan migrate
-php artisan db:seed
-php artisan serve  # Runs on http://localhost:8000
-```
-
-### 3. Frontend Setup (React)
+### 2. Frontend Setup (React)
 ```bash
 cd frontend
 npm install

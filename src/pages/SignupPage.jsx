@@ -7,7 +7,7 @@ const SignupPage = ({
   showConfirmPassword,
   setShowConfirmPassword,
   setCurrentPage,
-  message
+  message,
 }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4 font-sans">
@@ -16,7 +16,18 @@ const SignupPage = ({
         <div className="text-center mb-8">
           <div className="flex items-center justify-center mb-4">
             {/* Replaced Calendar icon with inline SVG */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8 text-blue-600 mr-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-8 h-8 text-blue-600 mr-2"
+            >
               <path d="M8 2v4" />
               <path d="M16 2v4" />
               <rect width="18" height="18" x="3" y="4" rx="2" />
@@ -35,11 +46,15 @@ const SignupPage = ({
 
         {/* Signup Form */}
         <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-            Log In
-          </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Log In</h2>
           {message && (
-            <div className={`p-3 mb-4 rounded-lg text-sm font-medium ${message.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+            <div
+              className={`p-3 mb-4 rounded-lg text-sm font-medium ${
+                message.type === "success"
+                  ? "bg-green-100 text-green-700"
+                  : "bg-red-100 text-red-700"
+              }`}
+            >
               {message.text}
             </div>
           )}
@@ -145,14 +160,34 @@ const SignupPage = ({
                 >
                   {/* Replaced Eye/EyeOff icons with inline SVGs */}
                   {showPassword ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path d="M17.94 17.94A5.55 5.55 0 0 0 12 16.5c-2.4 0-4.7 1.2-6.5 3.5" />
                       <path d="M2 2l20 20" />
                       <path d="M15.08 11.25A4.5 4.5 0 0 0 12 7.5a4.5 4.5 0 0 0-3.08 1.14" />
                       <path d="M11.25 15.08A4.5 4.5 0 0 0 7.5 12a4.5 4.5 0 0 0-1.14-3.08" />
                     </svg>
                   ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
                       <circle cx="12" cy="12" r="3" />
                     </svg>
@@ -185,14 +220,34 @@ const SignupPage = ({
                 >
                   {/* Replaced Eye/EyeOff icons with inline SVGs */}
                   {showConfirmPassword ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path d="M17.94 17.94A5.55 5.55 0 0 0 12 16.5c-2.4 0-4.7 1.2-6.5 3.5" />
                       <path d="M2 2l20 20" />
                       <path d="M15.08 11.25A4.5 4.5 0 0 0 12 7.5a4.5 4.5 0 0 0-3.08 1.14" />
                       <path d="M11.25 15.08A4.5 4.5 0 0 0 7.5 12a4.5 4.5 0 0 0-1.14-3.08" />
                     </svg>
                   ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
                       <circle cx="12" cy="12" r="3" />
                     </svg>
@@ -225,3 +280,5 @@ const SignupPage = ({
     </div>
   );
 };
+
+export default SignupPage;
